@@ -11,8 +11,8 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::create('mata_kuliah', function (Blueprint $table) {
-            $table->id();
-            $table->string('nama_mk');
+            $table->uuid('id')->primary(); // Mengubah ID bawaan menjadi UUID
+            $table->string('nama_mk', 100);
             $table->integer('sks');
             $table->timestamps();
         });
