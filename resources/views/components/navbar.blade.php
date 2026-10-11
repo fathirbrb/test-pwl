@@ -5,13 +5,15 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto align-items-center">
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('user.index') }}">Daftar User</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-primary text-white ms-2 px-3" href="{{ route('user.create') }}">+ Tambah
-                        User</a>
+                    <a class="nav-link" href="{{ route('matakuliah.index') }}">Daftar Mata Kuliah</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-primary text-white ms-2 px-3" href="{{ route('user.create') }}">+ Tambah User</a>
                 </li>
             </ul>
         </div>
